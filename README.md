@@ -22,8 +22,8 @@ KejaniEstate is a real estate marketplace designed to simplify the process of fi
 git clone <repository url>
 <br />
 <h2>Install dependencies:</h2>
-<code>npm install && cd client</code>
 <code>npm install</code>
+<code>cd client && npm install</code>
 <br />
 <h2>Start the development server:</h2>
 <code>npm run dev</code>
