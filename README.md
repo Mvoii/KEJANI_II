@@ -22,12 +22,41 @@ KejaniEstate is a real estate marketplace designed to simplify the process of fi
 git clone <repository url>
 <br />
 <h2>Install dependencies:</h2>
-npm install &&
-cd client
-npm install
+<code>npm install && cd client</code>
+<code>npm install</code>
 <br />
 <h2>Start the development server:</h2>
-npm run dev
+<code>npm run dev</code>
+<h2>Environment Variables Setup</h2>
+
+<h3>Google Maps API Key and Firebase API Key</h3>
+
+<ol>
+  <li>Create a <code>.env</code> file in the client folder of your project.</li>
+  <li>Add the following environment variables to the <code>.env</code> file:</li>
+</ol>
+<pre><code>
+VITE_GOOGLE_MAPS_API_KEY=YOUR_GOOGLE_MAPS_API_KEY
+VITE_FIREBASE_API_KEY=YOUR_FIREBASE_API_KEY
+</code></pre>
+<p>Obtain the API keys from the Google Cloud Platform for Google Maps API and Firebase.</p>
+
+<h3>MongoDB and JWT Secret</h3>
+
+<ol>
+  <li>Create another <code>.env</code> file in the root folder of your project.</li>
+  <li>Add the following environment variables to this <code>.env</code> file:</li>
+</ol>
+<pre><code>
+MONGO=YOUR_MONGODB_CONNECTION_STRING
+JWT_SECRET=YOUR_JWT_SECRET
+</code></pre>
+<p>Save your MongoDB connection string and choose a JWT secret.</p>
+
+<h3>Note for Users</h3>
+
+<p>Make sure to replace <code>YOUR_GOOGLE_MAPS_API_KEY</code>, <code>YOUR_FIREBASE_API_KEY</code>, <code>YOUR_MONGODB_CONNECTION_STRING</code>, and <code>YOUR_JWT_SECRET</code> with your actual API keys and secrets obtained from the respective platforms.</p>
+
 <h1>Usage Instructions</h1>
 <ol>
   <li><strong>User Registration and Login:</strong>
